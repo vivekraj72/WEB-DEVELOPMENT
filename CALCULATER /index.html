@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CALCULATER/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+
+        </div>
+          <div class="box-container">
+               <div class="box" onclick=" currentDisplay = currentDisplay + '1'; document.querySelector('.display').innerText = currentDisplay;">1
+            </div>
+
+
+       <div class="box" onclick="currentDisplay =      currentDisplay + '2'; document.querySelector('.display').innerText = currentDisplay; ">2
+       </div>
+
+
+       <div class="box" onclick="currentDisplay = currentDisplay + '3'; document.querySelector('.display').innerText = currentDisplay;">3</div>
+
+       <div class="box" onclick="currentDisplay = currentDisplay + '4'; document.querySelector('.display').innerText = currentDisplay;">4</div>
+
+       <div class="box" onclick="currentDisplay = currentDisplay + '5'; document.querySelector('.display').innerText = currentDisplay;">5</div>
+
+       <div class="box" onclick="currentDisplay = currentDisplay + '6'; document.querySelector('.display').innerText = currentDisplay;">6</div>
+
+       <div class="box" onclick="currentDisplay = currentDisplay + '7'; document.querySelector('.display').innerText = currentDisplay;">7</div>
+
+       <div class="box" onclick="currentDisplay = currentDisplay + '8'; document.querySelector('.display').innerText = currentDisplay;">8</div>
+
+       <div class="box" onclick="currentDisplay = currentDisplay + '9'; document.querySelector('.display').innerText = currentDisplay;">9</div>
+
+       <div class="box" onclick="currentDisplay = currentDisplay + '+'; document.querySelector('.display').innerText = currentDisplay;">+</div>
+
+       <div class="box" onclick="currentDisplay = currentDisplay + '0'; document.querySelector('.display').innerText = currentDisplay;">0</div>
+
+       <div class="box" onclick="currentDisplay = currentDisplay + '-'; document.querySelector('.display').innerText = currentDisplay;">-</div>
+
+       <div class="box" onclick="currentDisplay = currentDisplay + '*'; document.querySelector('.display').innerText = currentDisplay;">*</div>
+
+       <div class="box" onclick="currentDisplay = currentDisplay + '/'; document.querySelector('.display').innerText = currentDisplay;">/</div>
+
+       <div class="box" onclick="currentDisplay = eval(currentDisplay); document.querySelector('.display').innerText = currentDisplay;">=</div>
+
+       <div class="box" onclick="currentDisplay = ''; document.querySelector('.display').innerText = currentDisplay;">C</div>
+    </div>
+    
+ </div>
+
+ <script>
+    let currentDisplay = '';
+    document.querySelector("#display").value = currentDisplay;
+</script>
+</body>
+</html>
